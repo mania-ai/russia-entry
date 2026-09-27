@@ -174,8 +174,8 @@ section.paper .kicker { color: #8b6d33; }
 
 /* ---------- independent ---------- */
 .nos { list-style: none; margin: 0 0 56px; padding: 0; }
-.nos li { font-family: var(--serif); font-size: clamp(30px, 3.8vw, 50px); line-height: 1.2; color: #7d828a; padding: 6px 0; border-bottom: 1px solid rgba(27,31,37,.12); }
-.yes { font-family: var(--serif); font-size: clamp(32px, 4vw, 54px); line-height: 1.15; max-width: 900px; color: var(--paper-ink); }
+.nos li { font-family: var(--serif); font-size: clamp(30px, 3.8vw, 50px); line-height: 1.2; color: var(--muted); padding: 8px 0; border-bottom: 1px solid var(--line); }
+.yes { font-family: var(--serif); font-size: clamp(32px, 4vw, 54px); line-height: 1.15; max-width: 900px; color: var(--ink); border-left: 2px solid var(--gold); padding-left: 28px; }
 
 /* ---------- about ---------- */
 .about { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 72px; align-items: center; }
