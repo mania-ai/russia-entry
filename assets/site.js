@@ -190,8 +190,13 @@
         if (done) done.classList.add('show');
       };
       if (endpoint.indexOf('YOUR_FORM_ID') !== -1) {
-        // Placeholder until a real form endpoint is connected
-        alert('This form is not connected yet.');
+        // No form service yet: open the visitor's mail app with the brief filled in
+        var lines = [];
+        new FormData(form).forEach(function (v, k) { if (v) lines.push(k + ': ' + v); });
+        location.href = 'mailto:' + (form.getAttribute('data-email') || '') +
+          '?subject=' + encodeURIComponent('Brief from ' + (form.company ? form.company.value : 'website')) +
+          '&body=' + encodeURIComponent(lines.join(String.fromCharCode(10)));
+        showDone();
         return;
       }
       fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
