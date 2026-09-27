@@ -261,3 +261,25 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 /* Libre Franklin: light display weight */
 .hero .sub, .questions li, .answer, .product .name, .stat .big, .nos li, .yes, .svc .price, .svc .for, details summary, .site-footer .fname, .portrait span { font-weight: 300; letter-spacing: -0.01em; }
+
+/* ---------- article ---------- */
+.prose { max-width: 740px; }
+.prose h2 { font-size: clamp(26px, 2.8vw, 34px); margin: 56px 0 16px; }
+.prose h3 { font-size: 21px; margin: 32px 0 10px; font-weight: 400; }
+.prose p, .prose li { color: var(--ink-soft); font-size: 18px; line-height: 1.7; }
+.prose ul, .prose ol { padding-left: 22px; margin: 0 0 20px; }
+.prose li { margin-bottom: 8px; }
+.prose strong { color: var(--ink); font-weight: 500; }
+.prose a { color: var(--gold); }
+.prose table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 15px; }
+.prose th { text-align: left; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 10px 8px; border-bottom: 1px solid var(--line-strong); }
+.prose td { padding: 11px 8px; border-bottom: 1px solid var(--line); color: var(--ink-soft); vertical-align: top; }
+.prose td.num { text-align: right; white-space: nowrap; color: var(--ink); }
+.prose .callout { border-left: 2px solid var(--gold); padding: 6px 0 6px 22px; margin: 28px 0; }
+.prose .callout p { color: var(--ink); margin: 0; }
+.article-meta { color: var(--muted); font-size: 14px; letter-spacing: .04em; margin-top: 18px; }
+.article-cta { margin-top: 64px; padding-top: 36px; border-top: 1px solid var(--line); }
+.table-wrap { overflow-x: auto; }
+.cards article a.read { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
+.cards article h3 a { color: inherit; text-decoration: none; }
+.cards article h3 a:hover { color: var(--gold); }
