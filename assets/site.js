@@ -160,7 +160,7 @@
     el('circle', { cx: H0[0], cy: H0[1], r: 3.6, 'class': 'core' }, hg);
     var ht = el('text', { x: H0[0] + 9, y: H0[1] - 6 }, hg);
     ht.textContent = 'Russia';
-    ht.style.fill = '#c8a96a';
+    ht.style.fill = '#6fd3ea';
   }
 
   // ---------- product accordion ----------
